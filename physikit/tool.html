@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="tool.css" />
+    <title>PhysiKit</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="left">
+        <div>
+          <button id="addFlat">Flat</button>
+          <button id="addSquare">Square</button>
+          <button id="addCircle">Circle</button>
+          <button id="addSpring">Spring</button>
+          <button id="addDorurae">Dorurae</button>
+        </div>
+        <div>
+          <span id="handleLength">
+            <form>
+              <input type="number" name="input" placeholder="길이 조절" />
+              <button>반영</button>
+              <h5>= ??</h5>
+            </form>
+          </span>
+          <span id="handleRad">
+            <form>
+              <input type="number" name="input" placeholder="각도 조절(degree)" />
+              <button>반영</button>
+              <h5>= ??</h5>
+            </form>
+          </span>
+          <span id="handleWidth">
+            <form>
+              <input type="number" name="input" placeholder="너비 조절(스프링, 도르래 전용)" />
+              <button>반영</button>
+              <h5>= ??</h5>
+            </form>
+          </span>
+          <span id="handleNumOfRings">
+            <form>
+              <input type="number" name="input" placeholder="링 개수 조절(스프링 전용)" />
+              <button>반영</button>
+              <h5>= ??</h5>
+            </form>
+          </span>
+        </div>
+      </div>
+      <div id="mid">
+        <canvas></canvas>
+      </div>
+      <div id="right">
+        <button class="toPng">download as png</button>
+        <button class="toSvg">download as svg</button>
+      </div>
+    </div>
+    <script type="module" src="/js/app.js"></script>
+  </body>
+</html>
