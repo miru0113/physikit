@@ -6,7 +6,7 @@ const getLength = (p1, p2) => Math.sqrt((p1.x - p2.x) ** 2 + (p1.y - p2.y) ** 2)
 const RECT = "square";
 const CIRC = "circle";
 const WEIGHT_MASS = 1;
-const HILL = "hill";
+const HILL = "dorurae";
 const WEIGHT_HILL = 1;
 const LINE = "flat";
 const WEIGHT_LINE = 1;

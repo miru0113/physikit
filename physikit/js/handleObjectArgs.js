@@ -33,7 +33,7 @@ export class HandleObjectArgs {
 
   setH5 = () => {
     this.lengthH5.innerHTML = this.obj.length;
-    this.radH5.innerHTML = this.obj.rad;
+    this.radH5.innerHTML = (this.obj.rad / Math.PI) * 180;
     this.widthH5.innerHTML = this.obj.width;
     this.numOfRingsH5.innerHTML = this.obj.numOfRings;
   };
@@ -48,7 +48,7 @@ export class HandleObjectArgs {
   setRad = (e) => {
     e.preventDefault();
     const lengthInput = e.target["input"];
-    this.obj.setRad(lengthInput.value);
+    this.obj.setRad((lengthInput.value / 180) * Math.PI);
     this.setH5();
   };
 
